@@ -6,7 +6,7 @@
 #    By: jael-mor <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/11 00:28:37 by jael-mor          #+#    #+#              #
-#    Updated: 2022/10/28 10:36:39 by jael-mor         ###   ########.fr        #
+#    Updated: 2022/11/09 23:38:00 by jael-mor         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -79,3 +79,5 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
+
+.PHONY : all bonus clean fclean re 

@@ -30,20 +30,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-// int main()
-// {
-//     int i;
-
-//     i = 0;
-//     int    str[] = {1, 5, 7, 2, 6, 9};
-//     int *n;
-//     n =  ft_memchr(str, 5, 8);
-//     while (i < 3)
-//     {
-//         printf("%d\n",*n);
-//         i++;
-//         n++;
-//     }
-//     return (0);
-
-// }

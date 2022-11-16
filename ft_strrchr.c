@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-// this function must segfault
+
 char	*ft_strrchr(const char *str, int c)
 {
 	char	*tmp;

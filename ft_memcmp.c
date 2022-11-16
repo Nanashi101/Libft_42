@@ -30,20 +30,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-/*#include <stdio.h>
-int	main()
-{
-	int i = 0;
-	int	str[] = {1, 2, 3};
-	int	s[] = {1, 2, 3};
-
-	int	n = ft_memcmp(str, s, 12);
-
-	while (i < 4)
-	{
-		printf("%d", n);
-		i++;
-		n++;
-	}
-	return (0);
-}*/

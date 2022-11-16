@@ -33,25 +33,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-/*int	main()
-{
-	int a = 0;
-	int	b = 1337;
-
-	ft_memcpy(&a, &b, 4);
-	printf("%d", a);
-
-	//char str[] = "zello";
-	//char *s = str+1;
-
-	//char	*n = ft_memcpy(s, str, 6);
-
-	//printf("%s", ft_memcpy(s, str, 6));
-	// while (i < 6)
-	// {
-	// 	printf("%c", *n);
-	// 	i++;
-	// 	n++;
-	// }
-	//return (0);
-}// overlap*/

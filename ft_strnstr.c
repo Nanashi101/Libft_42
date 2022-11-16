@@ -23,7 +23,7 @@ char	*ft_strnstr(const char *hay, const char *nee, size_t len)
 	while (i < len && hay[i])
 	{
 		j = 0;
-		while ((hay[i + j] == nee[j]) && (hay[i + j] != '\0') && (i + j) < len)
+		while (hay[i + j] == nee[j] && hay[i + j] != '\0' && (i + j) < len)
 			j++;
 		if (nee[j] == '\0')
 			return ((char *)hay + i);
@@ -31,8 +31,3 @@ char	*ft_strnstr(const char *hay, const char *nee, size_t len)
 	}
 	return (0);
 }
-
-/*int	main()
-{
-	printf("%s", ft_strnstr("hello", "lo", 5));
-}*/

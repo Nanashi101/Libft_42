@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int	ft_set(char c, char const *str)
+static int	ft_set(char c, char const *str)
 {
 	int	i;
 

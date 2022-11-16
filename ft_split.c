@@ -49,13 +49,16 @@ static size_t	ft_char(char const *str, size_t i, char c)
 	return (len);
 }
 
-static char	**ft_free(char **str, size_t i)
+static char	**ft_free(char **str)
 {
-	while (i >= 0 && str[i] != NULL)
+	size_t	i;
+
+	i = 0;
+	while (str[i])
 	{
 		free(str[i]);
 		str[i] = NULL;
-		i--;
+		i++;
 	}
 	free(str);
 	str = NULL;
@@ -80,23 +83,11 @@ char	**ft_split(char const *str, char c)
 		while (str[i] == c && str[i])
 			i++;
 		new[j] = ft_substr(&str[i], 0, (ft_char(str, i, c)));
-		if (!new[j])
-			return (ft_free(new, j));
+		if (!(new[j]))
+			return (ft_free(new));
 		i += ft_char(str, i, c);
 		j++;
 	}
 	new[j] = 0;
 	return (new);
 }
-
-/*int main()
-{
-	char	arr[] = "hello######world######th####e####sun####just####raised####up!!";
-	int i = 0;
-	while (i < 8)
-	{
-		printf("%s\n", ft_split(arr, '#')[i]);
-		i++;
-	}
-}   
-*/

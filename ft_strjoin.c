@@ -6,7 +6,7 @@
 /*   By: jael-mor <jael-mor@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 10:01:10 by jael-mor          #+#    #+#             */
-/*   Updated: 2022/11/07 18:24:03 by jael-mor         ###   ########.fr       */
+/*   Updated: 2022/11/08 23:35:33 by jael-mor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_strlcat(p2 + i, s2, ft_strlen(s2) + 1);
 	return (p2);
 }
-/*#include <stdio.h>
-int main()
-{
-	char s1[] = "hello";
-	char s2[] = "world";
-
-	printf("%s", ft_strjoin(s1, s2));
-}*/

@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 #include "libft.h"
 
-
 void	*ft_memset(void *s, int c, size_t n)
 {
 	unsigned char	*ptr;
@@ -22,18 +21,4 @@ void	*ft_memset(void *s, int c, size_t n)
 		*ptr++ = (unsigned char)c;
 	}
 	return (s);
-}
-#include <stdio.h>
-int	main()
-{
-	int	str[] = {1, 3, 1978673, 797, 8};
-	int i = 0;
-	ft_memset((str + 2), 405, 4);
-	while (i < 3)
-	{  
-		printf("%d\n", str[i]);
-		i++;
-	}
-	return (0);
-	
 }

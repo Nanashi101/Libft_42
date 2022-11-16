@@ -36,12 +36,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[j] = '\0';
 	return (sum_of_len);
 }
-/*#include <stdio.h>
-int main()
-{
-  char src[6] = "world";
-  char dst[12] = "hello";
-
-  ft_strlcat(dst, src, 12);
-  printf("%s\n", dst);
-}*/

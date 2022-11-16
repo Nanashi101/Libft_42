@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-#include <string.h>
 
 char	*ft_strchr(const char *s, int c)
 {
@@ -29,14 +28,3 @@ char	*ft_strchr(const char *s, int c)
 		return (&p[i]);
 	return (NULL);
 }
-
-/*int	main ()
-{
-	char str[] = "hello";
-	int c = 'u';
-
-	printf("%s\n", ft_strchr(str, c));
-	printf("%s", strchr(str, c));
-	return (0);
-	
-}*/
